@@ -2,5 +2,5 @@
 name: "diff"
 version: "0.0.1"
 usage: "Diff release manifest or values"
-description: "."
+description: "Diff release manifest or values"
 command: "$HELM_PLUGIN_DIR/bin/diff.sh"
