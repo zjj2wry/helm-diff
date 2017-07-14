@@ -6,8 +6,8 @@ cat << EOF
 Diff release manifest or values.
 
 Available Commands:
-  manifest        Show the output of release manifest diffevent
-  values          Show the output of release values diffevent
+  manifest        Show the output of release manifest different
+  values          Show the output of release values different
 EOF
 }
 
