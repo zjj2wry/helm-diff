@@ -16,3 +16,8 @@ helm diff values REALEASE 1 2
 ```
 helm diff manifest REALEASE 1 2
 ```
+
+## Uninstall
+```
+helm plugin remove diff
+```
