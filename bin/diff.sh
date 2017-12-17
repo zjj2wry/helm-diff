@@ -12,15 +12,11 @@ EOF
 }
 
 manifest() {
-helm get manifest ${RELEASE} --revision ${firstRevision} > first.log
-helm get manifest ${RELEASE} --revision ${secondRevison} > second.log
-diff first.log second.log -c
+diff <(helm get manifest ${RELEASE} --revision ${firstRevision}) <(helm get manifest ${RELEASE} --revision ${secondRevison}) -c
 }
 
 values() {
-helm get values ${RELEASE} --revision ${firstRevision} > first.log
-helm get values ${RELEASE} --revision ${secondRevison} > second.log
-diff first.log second.log -c
+diff <(helm get values ${RELEASE} --revision ${firstRevision}) <(helm get values ${RELEASE} --revision ${secondRevison}) -c 
 }
 
 cmd="${1:-}"
